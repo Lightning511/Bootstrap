@@ -60,7 +60,16 @@
         <a class="nav-link btn btn-success" href="https://en.wikipedia.org/wiki/Bengal_tiger">More Info</a>
       </li>
       <li class="navbar-item">
-        <a class="nav-link btn btn-success" class="btn btn-success" href="">Navigate</a>
+        <a>
+          <div class="dropdown">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Navigation</button>
+              <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="#toc">Table of Contents</a> </li>
+                <li> <a class="dropdown-item" href="#Taxonomy">First Text</a> </li>
+                <li> <a class="dropdown-item" href="#sources">Sources</a> </li>
+              </ul>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -71,7 +80,7 @@
     <div class="alert alert-success">
       <strong>Welcome!</strong> Click here to <a href="#sources" class="alert-link">view the sources!</a>.
     </div>
-    <table class="table table-striped">
+    <table class="table table-striped" id="#toc">
       <tr>
         <th>The Bengal Tiger</th>
       </tr>
@@ -316,6 +325,41 @@
       <img src="https://static01.nyt.com/images/2019/05/07/science/06SCI-TIGER1/03SCI-TIGER1-videoSixteenByNine3000.jpg?year=2019&h=1688&w=3000&s=de3c7850519c9768a00feb8d378d273cd7842e44b7f29208393ebe3c222be5e4&k=ZQJBKqZ0VN&tw=1" class="center">
     </picture>
     <p><em><br>The Bengal Tiger</em></p>
+
+    <div class="container-fluid mt-3 center">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width:350px">
+            <img class="card-img-top" src="https://c532f75abb9c1c021b8c-e46e473f8aadb72cf2a8ea564b4e6a76.ssl.cf5.rackcdn.com/2022/05/30/9ipf8kfj4a_Julie_Larsen_Maher_2089_Malayan_Tiger_cub_TM_BZ_09_17_10_hr.jpg" alt="Wildlife Fund Image">
+            <div class="card-body">
+              <h4 class="card-title">The Bengal Tiger</h4>
+              <p class="card-text">Donate to help protect the Bengal Tiger's Habitat and Survival!</p>
+              <a href="https://support.worldwildlife.org/site/Donation2?df_id=14454&14454.donation=form1&set.DonationLevel=23644&s_src=AWE1800OQ18690A01690RX&gclid=Cj0KCQjwj7CZBhDHARIsAPPWv3ckCR_-t5XGVP1NCVtn8jCsEOtQeJfTYaOG_Z4eJhrwuEzo1HH9hWQaAttbEALw_wcB" class="btn btn-success">Donate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width:350px">
+            <img class="card-img-top" src="https://www.goway.com/media/cache/aa/79/aa79264f49aae4d4b2d77f0abdeb16fc.jpg" alt="Lion">
+            <div class="card-body">
+              <h4 class="card-title">The Lion</h4>
+              <p class="card-text">Click below to learn more about the Lion, a close relative of the Bengal Tiger!</p>
+              <a href="https://en.wikipedia.org/wiki/Lion" class="btn btn-success">The Lion</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width:350px">
+            <img class="card-img-top" src="https://cdn.britannica.com/01/152301-050-1EF6EBB4/Cheetah.jpg" alt="Cheetah">
+            <div class="card-body">
+              <h4 class="card-title">The Cheetah</h4>
+              <p class="card-text">Click below to learn more about the Cheetah, a close relative of the Bengal Tiger!</p>
+              <a href="https://en.wikipedia.org/wiki/Cheetah" class="btn btn-success">The Cheetah</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="bg-light p-3">
       <footer>
