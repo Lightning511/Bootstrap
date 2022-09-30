@@ -373,11 +373,34 @@
       </div>
       <div class="form-check mb-3">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me</input>
         </label>
       </div>
       <button type="submit" class="btn btn-success">Submit</button>
     </form>
+
+    <div class="offcanvas offcanvas-start" id="demo">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Sign Up for Bengal Tiger alerts</h1>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form action="/action_page.php" class="needs-validation">
+          <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Enter an Email:</label>
+            <input type="email" class="form-control" id="signupemail" placeholder="Enter email" name="email"></input>
+          </div>
+          <div class="mb-3"
+            <label for="pwd" class="form-label">Enter a Password:</label>
+            <input type="pwd" class="form-control" id="signuppwd" placeholder="Enter password" name="password"></input>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <br>
+    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Sign Up</button>
 
     <h4>Quick Note About The Bengal Tiger Click Below</h4>
     <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="The Bengal Tiger" data-bs-content="The Bengal Tiger is an endangered species.">
