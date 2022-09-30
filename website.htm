@@ -51,7 +51,7 @@
   </head>
   <body>
   <div class="container">
-  <nav class="navbar navbar-expand-sm bg-light justify-content-center bg-dark">
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center bg-dark sticky-top">
     <ul class="navbar-nav">
       <li class="navbar-item">
         <a class="nav-link btn btn-success" href="https://support.worldwildlife.org/site/Donation2?df_id=14454&14454.donation=form1&set.DonationLevel=23644&s_src=AWE1800OQ18690A01690RX&gclid=Cj0KCQjwj7CZBhDHARIsAPPWv3ckCR_-t5XGVP1NCVtn8jCsEOtQeJfTYaOG_Z4eJhrwuEzo1HH9hWQaAttbEALw_wcB">Donate</a>
@@ -59,17 +59,13 @@
       <li class="navbar-item">
         <a class="nav-link btn btn-success" href="https://en.wikipedia.org/wiki/Bengal_tiger">More Info</a>
       </li>
-      <li class="navbar-item">
-        <a>
-          <div class="dropdown">
-            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Navigation</button>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn btn-success" role="button" data-bs-toggle="dropdown">Navigation</a>
               <ul class="dropdown-menu">
                 <li> <a class="dropdown-item" href="#toc">Table of Contents</a> </li>
                 <li> <a class="dropdown-item" href="#Taxonomy">First Text</a> </li>
                 <li> <a class="dropdown-item" href="#sources">Sources</a> </li>
               </ul>
-          </div>
-        </a>
       </li>
     </ul>
   </nav>
@@ -360,6 +356,40 @@
         </div>
       </div>
     </div>
+
+    <form action="/action_page.php" class="needs-validation">
+      <p>Enter your email and password below to sign into your Bengal Tiger account.</p>
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        <div class="valid-feedback">Valid Answer.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <div class="valid-feedback">Valid Answer.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    <h4>Quick Note About The Bengal Tiger Click Below</h4>
+    <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="The Bengal Tiger" data-bs-content="The Bengal Tiger is an endangered species.">
+      Warning
+    </button>
+
+    <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+    </script>
 
     <div class="bg-light p-3">
       <footer>
